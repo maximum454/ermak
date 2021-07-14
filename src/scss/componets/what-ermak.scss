@@ -1,4 +1,5 @@
 .what-ermak{
+	margin-bottom: 60px;
 	&__body{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -21,6 +22,7 @@
 	}
 	&__title{
 		font-size: 34px;
+		font-weight: 600;
 		background: linear-gradient(45deg, #f15200 33%, #f58400);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
