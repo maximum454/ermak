@@ -1914,6 +1914,13 @@ p {
   margin: 0 auto;
 }
 
+.footer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .nav {
   padding: 30px 0;
 }
@@ -1934,7 +1941,7 @@ p {
   background: linear-gradient(45deg, #f15200 33%, #f58400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: #0B2349;
+  color: #f15200;
   text-transform: uppercase;
 }
 
@@ -2041,6 +2048,40 @@ p {
   font-size: 24px;
   margin-bottom: 26px;
   font-weight: 600;
+}
+
+.assort__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  position: relative;
+}
+
+.assort__body:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -50%;
+  background-image: url("../img/instruments2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 896px;
+  height: 100%;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.assort__title {
+  font-size: 34px;
+  font-weight: bold;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f15200;
 }
 
 @media only screen and (max-width: 1023px) {

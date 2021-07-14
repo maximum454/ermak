@@ -1,0 +1,33 @@
+.assort{
+	&__body{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 70px;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 20px;
+			right: -50%;
+			background-image: url("../img/instruments2.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 896px;
+			height: 100%;
+			z-index: -1;
+			transform: rotate(45deg);
+		}
+	}
+	&__title{
+		font-size: 34px;
+		font-weight: bold;
+		background: linear-gradient(45deg, #f15200 33%, #f58400);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #f15200;
+	}
+	&__subtitle{
+
+	}
+}
