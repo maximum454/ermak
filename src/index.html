@@ -5,6 +5,7 @@
     @@include('./template/_meta.html')
     <title>Ermak</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/ermak.min.css">
 </head>
 
@@ -57,7 +58,7 @@
             <div class="format-magz__title">Форматы магазинов</div>
             <div class="format-magz__body">
                 <div class="format-magz__item">
-                    <div class="format-magz__name">Строительная база 50–300 м2</div>
+                    <div class="format-magz__name">Строительная база<br> 50–300 м2</div>
                     <p>Формат, полностью укомплектованный под
                         ТМ «Ермак», включающий в себя стройматериалы и инструмент, автотовары и товары для туризма и
                         рыбалки. Данный формат - оптимальное решение для развития партнёра и торговой марки.
@@ -66,7 +67,7 @@
                     </p>
                 </div>
                 <div class="format-magz__item">
-                    <div class="format-magz__name">Инструментальный магазин
+                    <div class="format-magz__name">Инструментальный магазин<br>
                         60–150 м2
                     </div>
                     <p>Торговая площадь с интеграцией категории Хозтовары. Распределение товаров по группам:
@@ -75,7 +76,7 @@
                     </p>
                 </div>
                 <div class="format-magz__item">
-                    <div class="format-magz__name">Shop-in-shop
+                    <div class="format-magz__name">Shop-in-shop<br>
                         35–100 м2
                     </div>
                     <p>«Ермак Центр инструмента» расположен внутри магазина, локального ТЦ или другого формата розницы.
@@ -102,9 +103,73 @@
         </div>
 
     </div>
+
+    <div class="vigodny-contract">
+        <div class="container">
+            <div class="vigodny-contract__title">Выгодные контракты</div>
+            <p>Возможно заключение контрактов
+                c ведущими брендами через «Ермак Центр инструментов»</p>
+
+            <div class="vigodny-contract__slider">
+                <!--TODO: сделать слайдер-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="./img/bosch.jpg" width="374" height="374" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/latek.jpg" width="374" height="374" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/makita.jpg" width="374" height="374" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/resanta.jpg" width="374" height="374" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/tikkurila.jpg" width="374" height="374" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="commerce">
+        <div class="container">
+            <div class="commerce__title">Коммерция</div>
+            <div class="commerce__title2">Основные параметры магазина</div>
+            <div class="commerce__body">
+                <div>
+                    <div class="name">50 м2</div>
+                    <p>Торговая площадь.</p>
+                </div>
+                <div>
+                    <div class="name">От 50%</div>
+                    <p>Наценка.</p>
+                </div>
+                <div>
+                    <div class="name">От 2 700 000 руб.</div>
+                    <p>Суммарные инвестиции
+                        на магазин 50 м2.</p>
+                </div>
+                <div>
+                    <div class="name">От 12 месяцев</div>
+                    <p>Окупаемость без учета товара.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     @@include('./template/_footer.html')
 </div>
 <!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/ermak.min.js"></script>
 </body>
 
