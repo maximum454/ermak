@@ -1,0 +1,15 @@
+.nav{
+	display: flex;
+	justify-content: space-around;
+	padding: 30px 0;
+	a{
+		font-size: 18px;
+		line-height: 24px;
+		text-decoration: none;
+		background: linear-gradient(45deg, #f15200 33%, #f58400);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #0B2349;
+		text-transform: uppercase;
+	}
+}
