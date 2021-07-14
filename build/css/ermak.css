@@ -1915,12 +1915,15 @@ p {
 }
 
 .nav {
+  padding: 30px 0;
+}
+
+.nav__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 30px 0;
 }
 
 .nav a {
