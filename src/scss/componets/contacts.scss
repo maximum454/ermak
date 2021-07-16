@@ -1,0 +1,72 @@
+.contacts{
+  margin-bottom: 60px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -200px;
+    background-image: url("../img/instruments7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 680px;
+    height: 605px;
+    z-index: -1;
+    pointer-events: none;
+    transform: rotate(110deg);
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: -30px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+      background: linear-gradient(
+                      45deg, #f15200 33%, #f58400);
+    }
+  }
+  &__body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 920px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  &__img{
+    text-align: center;
+    margin-bottom: 24px;
+    img{
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      margin: 0 auto;
+    }
+  }
+  &__item{
+    text-align: center;
+  }
+  &__name{
+    text-transform: uppercase;
+    color: #888888;
+    margin: 0;
+  }
+  p{
+    margin-top: 0;
+  }
+}

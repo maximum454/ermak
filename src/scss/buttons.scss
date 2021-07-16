@@ -9,7 +9,7 @@
 	padding: .563rem 1.4rem;
 	font-size: 15px;
 	line-height: 20px;
-	border-radius: 4px;
+	border-radius: 25px;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
@@ -23,7 +23,7 @@
 	}
 	&.btn-primary{
 		color: #fff;
-		background-color: #fd7400;
+		background: linear-gradient(45deg, #f15200 33%, #f58400);
 		border-color: #fd7400;
 		&:hover {
 			color: #fff;
