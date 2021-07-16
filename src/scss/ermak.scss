@@ -94,6 +94,12 @@ p{
 .text-center {
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
 
 .img-fluid {
     max-width: 100%;
@@ -102,6 +108,11 @@ p{
 .d-block {
     display: block;
 }
+
+.mb-0{
+    margin-bottom: 0!important;
+}
+
 
 @import "componets/header";
 @import "componets/footer";
@@ -114,5 +125,7 @@ p{
 @import "componets/summa-invest";
 @import "componets/shipments";
 @import "componets/partner-privileges";
+@import "componets/effective-area";
+@import "componets/support";
 
 
