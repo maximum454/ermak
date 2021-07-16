@@ -2126,6 +2126,214 @@ p {
   width: 100%;
 }
 
+.commerce {
+  margin-bottom: 60px;
+}
+
+.commerce__title {
+  font-size: 34px;
+  font-weight: 700;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f15200;
+  margin-bottom: 60px;
+}
+
+.commerce__title2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.commerce__title2:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+}
+
+.commerce__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.commerce__name {
+  font-size: 24px;
+  margin-bottom: 26px;
+  font-weight: 600;
+}
+
+.summa-invest__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.summa-invest__title:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+}
+
+.summa-invest__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.summa-invest__img {
+  position: relative;
+}
+
+.summa-invest__img img {
+  position: relative;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  height: auto;
+  left: -40%;
+  top: -50px;
+}
+
+.shipments {
+  margin-bottom: 60px;
+}
+
+.shipments__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.shipments__title:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+}
+
+.shipments__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.shipments p span {
+  color: #f47636;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.partner-privileges__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.partner-privileges__title:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+}
+
+.partner-privileges__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.partner-privileges__img {
+  position: relative;
+}
+
+.partner-privileges__img img {
+  position: relative;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  height: auto;
+  right: -20%;
+  top: -50px;
+}
+
+.partner-privileges__item {
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.partner-privileges__item:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 35px;
+  height: 47px;
+}
+
+.partner-privileges__item.one:before {
+  background-image: url("../img/one.png");
+}
+
+.partner-privileges__item.two:before {
+  background-image: url("../img/two.png");
+}
+
+.partner-privileges__item.three:before {
+  background-image: url("../img/three.png");
+}
+
+.partner-privileges__item.four:before {
+  background-image: url("../img/four.png");
+}
+
+.partner-privileges__item.five:before {
+  background-image: url("../img/five.png");
+}
+
 @media only screen and (max-width: 1023px) {
   .tabs__caption {
     overflow-x: scroll;
