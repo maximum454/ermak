@@ -1432,7 +1432,6 @@ template {
           transform: translate(0, -50%);
   width: 8px;
   height: 8px;
-  background-image: url("../img/icons-sprite.svg#arrow-select-dark");
   border: none;
 }
 
@@ -2503,6 +2502,90 @@ p {
 .support__name {
   font-size: 24px;
   font-weight: 600;
+}
+
+.escort {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.escort:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -200px;
+  background-image: url("../img/instruments6.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 680px;
+  height: 605px;
+  z-index: -1;
+  pointer-events: none;
+  -webkit-transform: rotate(110deg);
+      -ms-transform: rotate(110deg);
+          transform: rotate(110deg);
+}
+
+.escort__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.escort__title:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -30px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+  background: linear-gradient(45deg, #f15200 33%, #f58400);
+}
+
+.escort__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  max-width: 920px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.escort__img {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.escort__img img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 auto;
+}
+
+.escort__item {
+  text-align: center;
+}
+
+.escort__name {
+  text-transform: uppercase;
+  color: #888888;
+  margin: 0;
+}
+
+.escort p {
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 1023px) {
