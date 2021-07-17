@@ -19,6 +19,7 @@ body {
     background-image: url("../img/wrp-bg2.png");
     background-position: top center;
     background-repeat: repeat-y;
+    background-size: cover;
     &.lock {
         overflow: hidden;
     }
