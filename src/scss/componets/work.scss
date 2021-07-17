@@ -1,5 +1,24 @@
 .work{
   margin-bottom: 60px;
-  &__pdf{}
+  &__pdf{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    color: #222222;
+    position: relative;
+    padding-left: 40px;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../img/icon-pdf.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 22px;
+      height: 30px;
+    }
+  }
 
 }

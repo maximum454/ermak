@@ -1197,7 +1197,7 @@ template {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.689rem 0.75rem;
+  padding: .889rem .75rem;
   font-size: 15px;
   line-height: 20px;
   color: #a4a9bb;
@@ -2452,6 +2452,9 @@ p {
   background-color: #fff;
   padding-left: 30px;
   padding-right: 30px;
+  color: #f15200;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .feedback .form-control::-webkit-input-placeholder {
@@ -2459,6 +2462,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f15200;
+  font-size: 24px;
 }
 
 .feedback .form-control::-moz-placeholder {
@@ -2466,6 +2470,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f15200;
+  font-size: 24px;
 }
 
 .feedback .form-control:-ms-input-placeholder {
@@ -2473,6 +2478,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f15200;
+  font-size: 24px;
 }
 
 .feedback .form-control::-ms-input-placeholder {
@@ -2480,6 +2486,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f15200;
+  font-size: 24px;
 }
 
 .feedback .form-control::placeholder {
@@ -2488,6 +2495,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #f15200;
+  font-size: 24px;
 }
 
 .feedback .btn {
@@ -2503,88 +2511,83 @@ p {
   margin-bottom: 60px;
 }
 
-.contacts {
-  margin-bottom: 60px;
+.work__pdf {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: right;
+  color: #222222;
   position: relative;
+  padding-left: 40px;
 }
 
-.contacts:before {
+.work__pdf:before {
   content: '';
   position: absolute;
-  top: -50px;
-  left: -200px;
-  background-image: url("../img/instruments7.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-pdf.png");
   background-position: center;
-  width: 680px;
-  height: 605px;
-  z-index: -1;
-  pointer-events: none;
-  -webkit-transform: rotate(110deg);
-      -ms-transform: rotate(110deg);
-          transform: rotate(110deg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 22px;
+  height: 30px;
+}
+
+.contacts {
+  margin-bottom: 60px;
 }
 
 .contacts__title {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  position: relative;
-  display: block;
   width: 100%;
+  display: block;
   grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.contacts__title:before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: -30px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  overflow: hidden;
+  grid-column-end: 3;
+  font-size: 34px;
+  font-weight: 700;
   background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
   background: linear-gradient(45deg, #f15200 33%, #f58400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #f15200;
 }
 
 .contacts__body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-  max-width: 920px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 680px;
   margin-right: 0;
   margin-left: auto;
+  position: relative;
 }
 
-.contacts__img {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.contacts__img img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  margin: 0 auto;
-}
-
-.contacts__item {
-  text-align: center;
+.contacts__body:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -600px;
+  background-image: url("../img/instruments7.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .contacts__name {
-  text-transform: uppercase;
-  color: #888888;
-  margin: 0;
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .contacts p {
   margin-top: 0;
+}
+
+.contacts p a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1023px) {

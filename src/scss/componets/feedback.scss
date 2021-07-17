@@ -23,6 +23,9 @@
     background-color: #fff;
     padding-left: 30px;
     padding-right: 30px;
+    color: #f15200;
+    font-size: 24px;
+    font-weight: 300;
     &::placeholder{
       background: linear-gradient(
                       45deg
@@ -30,6 +33,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: #f15200;
+      font-size: 24px;
     }
   }
   .btn{
