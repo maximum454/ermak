@@ -15,7 +15,10 @@
 
 body {
     background-color: #fff;
-    font-family: 'PT Sans', sans-serif;
+    font-family: $font1;
+    background-image: url("../img/wrp-bg2.png");
+    background-position: top center;
+    background-repeat: repeat-y;
     &.lock {
         overflow: hidden;
     }

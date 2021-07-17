@@ -1,5 +1,29 @@
 .work{
   margin-bottom: 60px;
+  &__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: -30px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+      background: linear-gradient(
+                      45deg, #f15200 33%, #f58400);
+    }
+  }
   &__pdf{
     font-size: 24px;
     font-weight: 600;
