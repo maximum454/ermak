@@ -1935,6 +1935,27 @@ p {
 .vigodny-contract .swiper-slide img {
   display: block;
   width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vigodny-contract .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 100%;
+  top: 0;
+}
+
+.vigodny-contract .swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 100%;
+  top: 0;
+}
+
+.vigodny-contract .swiper-button-disabled {
+  display: none;
 }
 
 .commerce {
