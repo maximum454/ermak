@@ -2306,7 +2306,7 @@ p {
 }
 
 .support:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -180px;
   right: -150px;
@@ -3148,6 +3148,36 @@ p {
     line-height: 24px;
     font-weight: 600;
     text-transform: none;
+    color: #f15200;
+  }
+
+  .support__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f15200;
+    margin-bottom: 30px;
+    text-align: right;
+  }
+
+  .support__subtitle {
+    max-width: 50%;
+    margin-bottom: 60px;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .support__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+  }
+
+  .support__name {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
     color: #f15200;
   }
 
