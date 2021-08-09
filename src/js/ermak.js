@@ -26,10 +26,27 @@ $(function () {
         grabCursor: true,
         centeredSlides: false,
         centeredSlidesBounds: false,
-        slidesPerView: 6,
         freeMode: true,
         observeParents: true,
         observer: true,
+        watchOverflow: true,
+        breakpoints: {
+            
+            320: {
+              slidesPerView: 1.5,
+              spaceBetween: 20
+            },
+            
+            480: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40
+            }
+          }
     });
     const swiperLogo = new Swiper('.swiper-container-logo', {
         grabCursor: true,

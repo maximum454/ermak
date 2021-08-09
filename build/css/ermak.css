@@ -1754,6 +1754,7 @@ p {
   -webkit-text-fill-color: transparent;
   color: #f15200;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav .swiper-slide {
@@ -2712,6 +2713,35 @@ p {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .what-ermak__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+
+  .what-ermak__body:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -50%;
+    background-image: url("../img/instruments.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 896px;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .what-ermak__txt {
+    max-width: 300px;
+    text-align: right;
   }
 
   .what-ermak__icons {

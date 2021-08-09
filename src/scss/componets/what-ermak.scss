@@ -51,6 +51,30 @@
 		object-fit: cover;
 	}
     @include r(767){
+        &__body{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 70px;
+            align-items: center;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: -50%;
+                background-image: url("../img/instruments.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 896px;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+        &__txt{
+            max-width: 300px;
+            text-align: right
+        }
         &__icons{
             display: none;
         }
