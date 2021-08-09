@@ -1756,6 +1756,10 @@ p {
   text-transform: uppercase;
 }
 
+.nav .swiper-slide {
+  text-align: center;
+}
+
 .what-ermak {
   margin-bottom: 60px;
 }
@@ -1816,6 +1820,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
 .what-ermak img {
@@ -1834,6 +1839,7 @@ p {
   font-weight: 600;
   margin-bottom: 60px;
   position: relative;
+  margin-left: 30px;
 }
 
 .format-magz__title:before {
@@ -1872,7 +1878,7 @@ p {
   content: '';
   position: absolute;
   top: 20px;
-  right: -50%;
+  right: -432px;
   background-image: url("../img/instruments2.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1883,6 +1889,7 @@ p {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+  pointer-events: none;
 }
 
 .assort__title {
@@ -1903,6 +1910,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -1977,6 +1985,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -2055,6 +2064,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -2091,6 +2101,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -2178,6 +2189,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -2351,6 +2363,7 @@ p {
 .escort__title {
   font-size: 30px;
   font-weight: 600;
+  margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
   display: block;
@@ -2417,6 +2430,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
   display: block;
   width: 100%;
@@ -2540,6 +2554,7 @@ p {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-left: 30px;
   position: relative;
   display: block;
   width: 100%;
@@ -2697,5 +2712,9 @@ p {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .what-ermak__icons {
+    display: none;
   }
 }
