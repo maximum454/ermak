@@ -1,49 +1,112 @@
-.work{
-  margin-bottom: 60px;
-  &__title {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    position: relative;
-    display: block;
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
+.work {
+    margin-bottom: 60px;
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        position: relative;
+        display: block;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: -30px;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
-      background: linear-gradient(
-                      45deg, #f15200 33%, #f58400);
+        &:before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -30px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+            background: linear-gradient(45deg, #f15200 33%, #f58400);
+        }
     }
-  }
-  &__pdf{
-    font-size: 24px;
-    font-weight: 600;
-    text-align: right;
-    color: #222222;
-    position: relative;
-    padding-left: 40px;
-    &:before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: url("../img/icon-pdf.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      width: 22px;
-      height: 30px;
+    img{
+        
     }
-  }
-
+    &__pdf {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: right;
+        color: #222222;
+        position: relative;
+        padding-left: 40px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url("../img/icon-pdf.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 22px;
+            height: 30px;
+        }
+    }
+    @include r(767){
+        text-align: center;
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            margin-left: 0;
+            text-align: center;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                overflow: hidden;
+                background: linear-gradient(45deg, #f15200 33%, #f58400);
+            }
+            &:after {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                width: 14px;
+                height: 14px;
+                content: "";
+                border-radius: 50%;
+                overflow: hidden;
+                background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+                background: linear-gradient(45deg, #f15200 33%, #f58400);
+            }
+        }
+        &__pdf {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            text-align: center;
+            color: #888888;
+            position: relative;
+            padding-left: 40px;
+            margin-top: 30px;
+            display: inline-block;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0,-50%);
+                background-image: url("../img/icon-pdf.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 22px;
+                height: 30px;
+            }
+        }
+        img{
+            max-width: 100%;
+            object-fit: contain;
+            height: auto;
+        }
+    }
 }

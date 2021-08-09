@@ -20,6 +20,35 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+
+            320: {
+                effect: false,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                
+            },
+
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            768: {
+                effect: false,
+                slidesPerView: 4,
+                spaceBetween: 40,
+                centeredSlides: false,
+                centeredSlidesBounds: false,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 0,
+                    modifier: 0,
+                    slideShadows: false,
+                },
+            }
+        }
     });
 
     const swiperNav = new Swiper('.swiper-container-nav', {
@@ -31,22 +60,22 @@ $(function () {
         observer: true,
         watchOverflow: true,
         breakpoints: {
-            
+
             320: {
-              slidesPerView: 1.5,
-              spaceBetween: 20
+                slidesPerView: 1.5,
+                spaceBetween: 20
             },
-            
+
             480: {
-              slidesPerView: 3,
-              spaceBetween: 30
+                slidesPerView: 3,
+                spaceBetween: 30
             },
-            
+
             768: {
-              slidesPerView: 4,
-              spaceBetween: 40
+                slidesPerView: 4,
+                spaceBetween: 40
             }
-          }
+        }
     });
     const swiperLogo = new Swiper('.swiper-container-logo', {
         grabCursor: true,
@@ -58,21 +87,21 @@ $(function () {
         observeParents: true,
         observer: true,
         breakpoints: {
-            
+
             320: {
-              slidesPerView: 2,
-              spaceBetween: 20
+                slidesPerView: 2,
+                spaceBetween: 20
             },
-            
+
             480: {
-              slidesPerView: 3,
-              spaceBetween: 30
+                slidesPerView: 3,
+                spaceBetween: 30
             },
-            
+
             768: {
-              slidesPerView: 4,
-              spaceBetween: 40
+                slidesPerView: 4,
+                spaceBetween: 40
             }
-          }
+        }
     });
 })

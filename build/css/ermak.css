@@ -1924,7 +1924,7 @@ p {
 }
 
 .vigodny-contract__title:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: -30px;
@@ -1999,7 +1999,7 @@ p {
 }
 
 .commerce__title2:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: -30px;
@@ -2572,7 +2572,7 @@ p {
 }
 
 .work__title:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: -30px;
@@ -2594,7 +2594,7 @@ p {
 }
 
 .work__pdf:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2882,5 +2882,255 @@ p {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+
+  .vigodny-contract__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .vigodny-contract__title:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .vigodny-contract__title:after {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    content: "";
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .vigodny-contract .swiper-button-prev {
+    display: none;
+  }
+
+  .vigodny-contract .swiper-button-next {
+    display: none;
+  }
+
+  .commerce__title {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+
+  .commerce__title2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .commerce__title2:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .commerce__title2:after {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    content: "";
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .commerce__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+  }
+
+  .commerce__name {
+    font-size: 16px;
+    margin-bottom: 18px;
+    font-weight: 600;
+    color: #f25400;
+  }
+
+  .feedback__title {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 22px;
+  }
+
+  .feedback__body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .feedback .btn {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    width: 132px;
+  }
+
+  .feedback .form-group {
+    margin-bottom: 22px;
+  }
+
+  .feedback .form-control {
+    background-color: #fff;
+    color: #f15200;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 30px;
+  }
+
+  .feedback .form-control::-webkit-input-placeholder {
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .feedback .form-control::-moz-placeholder {
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .feedback .form-control:-ms-input-placeholder {
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .feedback .form-control::-ms-input-placeholder {
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .feedback .form-control::placeholder {
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #b2b2b2;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .work {
+    text-align: center;
+  }
+
+  .work__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .work__title:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .work__title:after {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    content: "";
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .work__pdf {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #888888;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 30px;
+    display: inline-block;
+  }
+
+  .work__pdf:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    background-image: url("../img/icon-pdf.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 22px;
+    height: 30px;
+  }
+
+  .work img {
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: auto;
   }
 }
