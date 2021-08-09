@@ -1,34 +1,73 @@
-.format-magz{
-	margin-bottom: 60px;
-	&__title{
-		font-size: 30px;
-		font-weight: 600;
-		margin-bottom: 60px;
-		position: relative;
+.format-magz {
+    margin-bottom: 60px;
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 60px;
+        position: relative;
         margin-left: 30px;
-		&:before{
-			content: '';
-			position: absolute;
-			top: 4px;
-			left: -30px;
-			width: 22px;
-			height: 22px;
-			border-radius: 50%;
-			overflow: hidden;
-			background: linear-gradient(45deg, #f15200 33%, #f58400);
-		}
-	}
-	&__body{
-		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-		grid-gap: 30px;
-	}
-	&__item{
-
-	}
-	&__name{
-		font-size: 24px;
-		margin-bottom: 26px;
-		font-weight: 600;
-	}
+        &:before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -30px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: linear-gradient(45deg, #f15200 33%, #f58400);
+        }
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-gap: 30px;
+    }
+    &__item {
+    }
+    &__name {
+        font-size: 24px;
+        margin-bottom: 26px;
+        font-weight: 600;
+    }
+    @include r(767) {
+        &__body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 60px;
+            position: relative;
+            margin-left: 0;
+            text-align: center;
+            &:before {
+                left: 0;
+                width: 14px;
+                height: 14px;
+            }
+            &:after {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                width: 14px;
+                height: 14px;
+                content: "";
+                border-radius: 50%;
+                overflow: hidden;
+                background: linear-gradient(45deg, #f15200 33%, #f58400);
+            }
+        }
+        &__name {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+            span{
+                color: #f25400;
+            }
+        }
+    }
 }

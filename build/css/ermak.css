@@ -1844,7 +1844,7 @@ p {
 }
 
 .format-magz__title:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: -30px;
@@ -1858,7 +1858,7 @@ p {
 
 .format-magz__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 30px;
 }
 
@@ -2707,6 +2707,11 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .d-desktop-none {
     display: block;
   }
@@ -2740,11 +2745,57 @@ p {
   }
 
   .what-ermak__txt {
-    max-width: 300px;
+    max-width: 400px;
     text-align: right;
+    margin-left: auto;
   }
 
   .what-ermak__icons {
     display: none;
+  }
+
+  .format-magz__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .format-magz__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .format-magz__title:before {
+    left: 0;
+    width: 14px;
+    height: 14px;
+  }
+
+  .format-magz__title:after {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    content: "";
+    border-radius: 50%;
+    overflow: hidden;
+    background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+    background: linear-gradient(45deg, #f15200 33%, #f58400);
+  }
+
+  .format-magz__name {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .format-magz__name span {
+    color: #f25400;
   }
 }
