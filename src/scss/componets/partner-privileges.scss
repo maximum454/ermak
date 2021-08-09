@@ -110,17 +110,31 @@
                 background: linear-gradient(45deg, #f15200 33%, #f58400);
             }
         }
+        &__body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
         &__img {
+            display: none;
+        }
+        &__item {
+            padding-left: 50px;
             position: relative;
-            img {
-                position: relative;
-                max-width: 100%;
-                object-fit: contain;
-                object-position: center;
-                height: auto;
-                right: 0;
-                top: 0;
+            margin-bottom: 30px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 35px;
+                height: 30px;
             }
+            
         }
     }
 }

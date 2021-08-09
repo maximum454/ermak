@@ -1,73 +1,127 @@
-.escort{
-  margin-bottom: 60px;
-  position: relative;
-  &:before{
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -200px;
-    background-image: url("../img/instruments6.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 680px;
-    height: 605px;
-    z-index: -1;
-    pointer-events: none;
-    transform: rotate(110deg);
-  }
-  &__title {
-    font-size: 30px;
-    font-weight: 600;
-    margin-left: 30px;
-    margin-bottom: 30px;
+.escort {
+    margin-bottom: 60px;
     position: relative;
-    display: block;
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-
     &:before {
-      content: '';
-      position: absolute;
-      top: 4px;
-      left: -30px;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
-      background: linear-gradient(
-                      45deg, #f15200 33%, #f58400);
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: -200px;
+        background-image: url("../img/instruments6.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 680px;
+        height: 605px;
+        z-index: -1;
+        pointer-events: none;
+        transform: rotate(110deg);
     }
-  }
-  &__body{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    max-width: 920px;
-    margin-right: 0;
-    margin-left: auto;
-  }
-  &__img{
-    text-align: center;
-    margin-bottom: 24px;
-    img{
-      display: block;
-      object-fit: cover;
-      object-position: center;
-      margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        display: block;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: -30px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+            background: linear-gradient(45deg, #f15200 33%, #f58400);
+        }
     }
-  }
-  &__item{
-    text-align: center;
-  }
-  &__name{
-    text-transform: uppercase;
-    color: #888888;
-    margin: 0;
-  }
-  p{
-    margin-top: 0;
-  }
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        max-width: 920px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    &__img {
+        text-align: center;
+        margin-bottom: 24px;
+        img {
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            margin: 0 auto;
+        }
+    }
+    &__item {
+        text-align: center;
+    }
+    &__name {
+        text-transform: uppercase;
+        color: #888888;
+        margin: 0;
+    }
+    p {
+        margin-top: 0;
+    }
+    @include r(767){
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -120px;
+            background-image: url("../img/instruments6.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 300px;
+            height: 220px;
+            z-index: -1;
+            pointer-events: none;
+            transform: rotate(110deg);
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            margin-left: 0;
+            text-align: center;
+            padding: 0 30px;
+            grid-column-start: 1;
+        grid-column-end: 1;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                overflow: hidden;
+                background: linear-gradient(45deg, #f15200 33%, #f58400);
+            }
+            &:after {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                width: 14px;
+                height: 14px;
+                content: "";
+                border-radius: 50%;
+                overflow: hidden;
+                background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
+                background: linear-gradient(45deg, #f15200 33%, #f58400);
+            }
+        }
+        &__body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+    }
 }
