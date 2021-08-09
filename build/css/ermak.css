@@ -2728,19 +2728,20 @@ p {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    padding-top: 300px;
   }
 
   .what-ermak__body:before {
     content: '';
     position: absolute;
     top: 20px;
-    left: -50%;
+    left: -50px;
     background-image: url("../img/instruments.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 896px;
-    height: 100%;
+    width: 300px;
+    height: 280px;
     z-index: -1;
   }
 
@@ -2797,5 +2798,65 @@ p {
 
   .format-magz__name span {
     color: #f25400;
+  }
+
+  .assort {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .assort__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .assort__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .assort__body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -125px;
+    background-image: url("../img/instruments2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 160px;
+    z-index: -1;
+    -webkit-transform: rotate(-40deg) scale(-1, 1);
+        -ms-transform: rotate(-40deg) scale(-1, 1);
+            transform: rotate(-40deg) scale(-1, 1);
+    pointer-events: none;
+  }
+
+  .assort__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: right;
+    max-width: 140px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .assort__img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .assort__txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }

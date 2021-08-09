@@ -32,4 +32,51 @@
 	&__subtitle{
 		max-width: 570px;
 	}
+    @include r(767){
+        margin-bottom: 30px;
+        margin-top: 30px;
+        &__title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__body{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0px;
+            position: relative;
+            padding-top: 50px;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -125px;
+                background-image: url("../img/instruments2.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 300px;
+                height: 160px;
+                z-index: -1;
+                transform: rotate(-40deg) scale(-1, 1);
+                pointer-events: none;
+            }
+        }  
+        &__img{
+            order: 1;
+            text-align: right;
+            max-width: 140px;
+            margin-right: 0;
+            margin-left: auto;
+            img{
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin-right: 0;
+                margin-left: auto;
+            }
+        }
+        &__txt{
+            order: 2;
+        }
+    }
 }

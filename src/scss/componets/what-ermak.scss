@@ -57,17 +57,18 @@
             grid-gap: 70px;
             align-items: center;
             position: relative;
+            padding-top: 300px;
             &:before{
                 content: '';
                 position: absolute;
                 top: 20px;
-                left: -50%;
+                left: -50px;
                 background-image: url("../img/instruments.png");
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
-                width: 896px;
-                height: 100%;
+                width: 300px;
+                height: 280px;
                 z-index: -1;
             }
         }
