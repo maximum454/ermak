@@ -2668,6 +2668,16 @@ p {
   text-decoration: none;
 }
 
+.contacts__social a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.contacts__social a:last-child {
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 1023px) {
   .tabs__caption {
     overflow-x: scroll;

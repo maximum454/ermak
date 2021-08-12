@@ -56,4 +56,14 @@
       text-decoration: none;
     }
   }
+  &__social{
+      a{
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 5px;
+          &:last-child{
+              margin-right: 0;
+          }
+      }
+  }
 }
