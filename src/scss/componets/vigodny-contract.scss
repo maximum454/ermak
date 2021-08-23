@@ -1,4 +1,5 @@
 .vigodny-contract {
+    margin-bottom: 60px;
     &__title {
         font-size: 30px;
         font-weight: 600;
@@ -17,40 +18,19 @@
             background: linear-gradient(45deg, #f15200 33%, #f58400);
         }
     }
-    .swiper-container {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
 
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
+
+    &__slider{
+        overflow: hidden;
     }
 
     .swiper-slide img {
-        display: block;
-        width: 100%;
+        max-width: 100%;
+		display: block;
+		object-fit: cover;
         height: auto;
-        object-fit: cover;
     }
-    .swiper-button-prev {
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 60px;
-        height: 100%;
-        top: 0;
-    }
-    .swiper-button-next {
-        background-color: rgba(0, 0, 0, 0.2);
-        width: 60px;
-        height: 100%;
-        top: 0;
-    }
-    .swiper-button-disabled {
-        display: none;
-    }
+    
     @include r(767) {
         &__title {
             font-size: 18px;
@@ -82,11 +62,6 @@
                 background: linear-gradient(45deg, #f15200 33%, #f58400);
             }
         }
-        .swiper-button-prev {
-            display: none;
-        }
-        .swiper-button-next {
-           display: none;
-        }
+
     }
 }

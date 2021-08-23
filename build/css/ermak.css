@@ -1915,6 +1915,10 @@ p {
   max-width: 570px;
 }
 
+.vigodny-contract {
+  margin-bottom: 60px;
+}
+
 .vigodny-contract__title {
   font-size: 30px;
   font-weight: 600;
@@ -1936,43 +1940,16 @@ p {
   background: linear-gradient(45deg, #f15200 33%, #f58400);
 }
 
-.vigodny-contract .swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.vigodny-contract .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.vigodny-contract__slider {
+  overflow: hidden;
 }
 
 .vigodny-contract .swiper-slide img {
+  max-width: 100%;
   display: block;
-  width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.vigodny-contract .swiper-button-prev {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 60px;
-  height: 100%;
-  top: 0;
-}
-
-.vigodny-contract .swiper-button-next {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 60px;
-  height: 100%;
-  top: 0;
-}
-
-.vigodny-contract .swiper-button-disabled {
-  display: none;
+  height: auto;
 }
 
 .commerce {
@@ -2297,6 +2274,20 @@ p {
   text-transform: uppercase;
 }
 
+.effective-area__colum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
 .effective-area p {
   margin: 0;
 }
@@ -2596,6 +2587,14 @@ p {
   color: #222222;
   position: relative;
   padding-left: 40px;
+  margin-top: 20px;
+  display: block;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .work__pdf:before {
@@ -2609,6 +2608,14 @@ p {
   background-size: 100%;
   width: 22px;
   height: 30px;
+}
+
+.work .swiper-slide img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
 }
 
 .contacts {
@@ -2931,14 +2938,6 @@ p {
     overflow: hidden;
     background: -o-linear-gradient(45deg, #f15200 33%, #f58400);
     background: linear-gradient(45deg, #f15200 33%, #f58400);
-  }
-
-  .vigodny-contract .swiper-button-prev {
-    display: none;
-  }
-
-  .vigodny-contract .swiper-button-next {
-    display: none;
   }
 
   .commerce__title {
