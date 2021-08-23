@@ -36,6 +36,9 @@
         margin-bottom: 26px;
         font-weight: 600;
     }
+    .escort__img{
+        height: 70px;
+    }
     @include r(767){
         &__title {
             font-size: 18px;

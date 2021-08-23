@@ -2468,6 +2468,10 @@ p {
   font-weight: 600;
 }
 
+.bonus .escort__img {
+  height: 70px;
+}
+
 .feedback {
   margin-bottom: 60px;
 }
