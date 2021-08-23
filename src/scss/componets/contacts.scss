@@ -66,4 +66,47 @@
           }
       }
   }
+  @include r(767){
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        
+    
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -150px;
+          margin-top: -125px;
+          width: 250px;
+          height: 250px;
+         
+        }
+      }
+    }
+    &__title {
+       
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 18px;
+        font-weight: 700;
+        color: #f15200;
+        margin-bottom: 30px;
+        text-align: right;
+    }
+    &__item{
+        text-align: right;
+    }
+    &__name {
+        display: none;
+      }
+      p {
+        margin-top: 0;
+        a{
+          text-decoration: none;
+          display: block;
+          color: #020202;
+        }
+      }
 }

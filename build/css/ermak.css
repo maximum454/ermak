@@ -2689,6 +2689,34 @@ p {
   margin-right: 0;
 }
 
+.contacts__title {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f15200;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.contacts__item {
+  text-align: right;
+}
+
+.contacts__name {
+  display: none;
+}
+
+.contacts p {
+  margin-top: 0;
+}
+
+.contacts p a {
+  text-decoration: none;
+  display: block;
+  color: #020202;
+}
+
 @media only screen and (max-width: 1023px) {
   .tabs__caption {
     overflow-x: scroll;
@@ -3528,5 +3556,21 @@ p {
     -o-object-fit: contain;
        object-fit: contain;
     height: auto;
+  }
+
+  .contacts__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .contacts__body:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    margin-top: -125px;
+    width: 250px;
+    height: 250px;
   }
 }
