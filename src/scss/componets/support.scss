@@ -41,6 +41,23 @@
         font-weight: 600;
     }
     @include r(767){
+        padding-bottom: 100px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: auto;
+            bottom: -140px;
+            right: -90px;
+            background-image: url("../img/instruments5.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 380px;
+            height: 320px;
+            z-index: -1;
+            pointer-events: none;
+            transform: rotate(-30deg);
+        }
         &__title {
             font-size: 18px;
             font-weight: 700;
@@ -49,7 +66,7 @@
             text-align: right;
         }
         &__subtitle {
-            max-width: 50%;
+            max-width: 100%;
             margin-bottom: 60px;
             text-align: right;
             margin-right: 0;
