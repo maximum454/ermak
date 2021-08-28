@@ -2356,14 +2356,14 @@ p {
 .support:before {
   content: "";
   position: absolute;
-  top: -180px;
+  top: -110px;
   right: -150px;
   background-image: url("../img/instruments5.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 680px;
-  height: 605px;
+  width: 580px;
+  height: 500px;
   z-index: -1;
   pointer-events: none;
   -webkit-transform: rotate(-20deg);
@@ -3300,7 +3300,7 @@ p {
   }
 
   .effective-area__item {
-    padding-left: 50px;
+    padding-left: 0;
     position: relative;
     margin-bottom: 50px;
   }
@@ -3345,13 +3345,13 @@ p {
     font-weight: 700;
     color: #f15200;
     margin-bottom: 30px;
-    text-align: right;
+    text-align: center;
   }
 
   .support__subtitle {
     max-width: 100%;
     margin-bottom: 60px;
-    text-align: right;
+    text-align: center;
     margin-right: 0;
     margin-left: auto;
   }
