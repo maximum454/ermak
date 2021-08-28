@@ -1817,6 +1817,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 50px;
+  position: relative;
 }
 
 .what-ermak__logo-item {
@@ -1837,6 +1838,33 @@ p {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.what-ermak .swiper-button-prev {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.what-ermak .swiper-button-next {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .format-magz {
@@ -1942,6 +1970,7 @@ p {
 
 .vigodny-contract__slider {
   overflow: hidden;
+  position: relative;
 }
 
 .vigodny-contract .swiper-slide img {
@@ -1950,6 +1979,33 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
+}
+
+.vigodny-contract .swiper-button-prev {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.vigodny-contract .swiper-button-next {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .commerce {
@@ -2614,12 +2670,44 @@ p {
   height: 30px;
 }
 
+.work .swiper-container {
+  overflow: hidden;
+  position: relative;
+}
+
 .work .swiper-slide img {
   max-width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
+}
+
+.work .swiper-button-prev {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+
+.work .swiper-button-next {
+  width: 60px;
+  height: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  opacity: 1;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .contacts {

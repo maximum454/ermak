@@ -22,6 +22,7 @@
 
     &__slider{
         overflow: hidden;
+        position: relative;
     }
 
     .swiper-slide img {
@@ -29,6 +30,29 @@
 		display: block;
 		object-fit: cover;
         height: auto;
+    }
+    .swiper-button-prev{
+        width: 60px;
+        height: 100%;
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        opacity: 1;
+    }
+    .swiper-button-next{
+        width: 60px;
+        height: 100%;
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+        opacity: 1;
+        transform: rotate(180deg);
     }
     
     @include r(767) {

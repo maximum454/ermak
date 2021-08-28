@@ -10,6 +10,10 @@ $(function () {
         watchOverflow: true,
         observeParents: true,
         observer: true,
+        navigation: {
+            nextEl: '.work-next',
+            prevEl: '.work-prev',
+          },
         breakpoints: {
 
             320: {
@@ -38,6 +42,10 @@ $(function () {
         watchOverflow: true,
         observeParents: true,
         observer: true,
+        navigation: {
+            nextEl: '.vigodny-next',
+            prevEl: '.vigodny-prev',
+          },
         breakpoints: {
 
             320: {
@@ -96,6 +104,10 @@ $(function () {
         watchOverflow: true,
         observeParents: true,
         observer: true,
+        navigation: {
+            nextEl: '.logo-next',
+            prevEl: '.logo-prev',
+          },
         breakpoints: {
 
             320: {
